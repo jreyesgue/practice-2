@@ -19,6 +19,11 @@
             _students.Remove(student);
         }
 
+        public void RemoveStudent(int studentRollNumber)
+        {
+            _students.RemoveAll(student => student.RollNumber == studentRollNumber);
+        }
+
         public void DisplayStudents()
         {
             _students.ForEach(student => student.DisplayDetails());
