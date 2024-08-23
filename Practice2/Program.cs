@@ -1,4 +1,5 @@
-﻿using Practice2.LibrarySystem;
+﻿using Practice2.Employees;
+using Practice2.LibrarySystem;
 using Practice2.Players;
 using Practice2.School;
 using Practice2.Utils;
@@ -35,6 +36,8 @@ namespace Practice2
                         playerManager.StartMenu();
                         break;
                     case 5:
+                        var employeeManager = new EmployeesMenu();
+                        employeeManager.StartMenu();
                         break;
                     case 6:
                         finish = true;

@@ -19,6 +19,11 @@
             _employees.Remove(employee);
         }
 
+        public void RemoveEmployee(int employeeId)
+        {
+            _employees.RemoveAll(employee => ((Employee)employee).EmployeeID == employeeId);
+        }
+
         public void MakeAllEmployeesWork()
         {
             _employees.ForEach(employee => employee.Work());
