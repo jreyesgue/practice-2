@@ -19,6 +19,11 @@
             _vehicles.Remove(vehicle);
         }
 
+        public void RemoveVehicle(string vehicleModel, int vehicleYear)
+        {
+            _vehicles.RemoveAll(vehicle => vehicle.Model == vehicleModel && vehicle.Year == vehicleYear);
+        }
+
         public void DisplayVehicles()
         {
             _vehicles.ForEach(vehicle => vehicle.DisplayDetails());
