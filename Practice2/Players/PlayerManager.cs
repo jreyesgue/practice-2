@@ -19,6 +19,11 @@
             _players.Remove(player);
         }
 
+        public void RemovePlayer(string playerName)
+        {
+            _players.RemoveAll(player => player.ElementName == playerName);
+        }
+
         public void StartAllPlayers()
         {
             _players.ForEach(player => player.Play());

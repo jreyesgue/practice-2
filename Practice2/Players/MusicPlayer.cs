@@ -2,21 +2,21 @@
 {
     internal class MusicPlayer : IPlayable
     {
-        public string SongName { get; set; }
+        public string ElementName { get; set; }
 
         public MusicPlayer(string songName)
         {
-            SongName = songName;
+            ElementName = songName;
         }
 
         public void Pause()
         {
-            Console.WriteLine($"Music: {SongName} paused...");
+            Console.WriteLine($"Music: {ElementName} paused...");
         }
 
         public void Play()
         {
-            Console.WriteLine($"Music: {SongName} playing...");
+            Console.WriteLine($"Music: {ElementName} playing...");
         }
     }
 }

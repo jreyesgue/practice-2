@@ -1,4 +1,5 @@
 ﻿using Practice2.LibrarySystem;
+using Practice2.Players;
 using Practice2.School;
 using Practice2.Utils;
 using Practice2.Vehicles;
@@ -30,6 +31,8 @@ namespace Practice2
                         vehicleManager.StartMenu();
                         break;
                     case 4:
+                        var playerManager = new PlayersMenu();
+                        playerManager.StartMenu();
                         break;
                     case 5:
                         break;

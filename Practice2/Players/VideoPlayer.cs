@@ -2,21 +2,21 @@
 {
     public class VideoPlayer : IPlayable
     {
-        public string VideoName { get; set; }
+        public string ElementName { get; set; }
 
         public VideoPlayer(string videoName)
         {
-            VideoName = videoName;
+            ElementName = videoName;
         }
 
         void IPlayable.Pause()
         {
-            Console.WriteLine($"Video: {VideoName} paused...");
+            Console.WriteLine($"Video: {ElementName} paused...");
         }
 
         void IPlayable.Play()
         {
-            Console.WriteLine($"Video: {VideoName} started...");
+            Console.WriteLine($"Video: {ElementName} started...");
         }
     }
 }
