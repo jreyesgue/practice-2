@@ -24,5 +24,10 @@
             Console.WriteLine($"Handlebar Type: {HandlebarType}");
             Console.WriteLine($"Sidecar: {HasSidecar}");
         }
+
+        public override void StartEngine()
+        {
+            Console.WriteLine($"Started {Make} {Model} Motorcycle engine...");
+        }
     }
 }

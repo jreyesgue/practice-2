@@ -14,5 +14,7 @@
         }
 
         public abstract void DisplayDetails();
+
+        public abstract void StartEngine();
     }
 }

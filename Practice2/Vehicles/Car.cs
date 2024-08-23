@@ -24,5 +24,10 @@
             Console.WriteLine($"Trunk Capacity: {TrunkCapacity} liters");
             Console.WriteLine($"Sunroof: {HasSunroof}");
         }
+
+        public override void StartEngine()
+        {
+            Console.WriteLine($"Started {Make} {Model} Car engine...");
+        }
     }
 }
