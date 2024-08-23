@@ -1,4 +1,5 @@
-﻿using Practice2.School;
+﻿using Practice2.LibrarySystem;
+using Practice2.School;
 using Practice2.Utils;
 
 namespace Practice2
@@ -20,6 +21,8 @@ namespace Practice2
                         classroom.StartMenu();
                         break;
                     case 2:
+                        var library = new LibraryMenu();
+                        library.StartMenu();
                         break;
                     case 3:
                         break;

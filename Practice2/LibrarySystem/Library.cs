@@ -19,6 +19,11 @@
             _books.Remove(book);
         }
 
+        public void RemoveBook(string bookIsbn)
+        {
+            _books.RemoveAll(book => book.ISBN == bookIsbn);
+        }
+
         public void DisplayBooks()
         {
             _books.ForEach(book => book.DisplayDetails());
